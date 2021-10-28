@@ -1,0 +1,108 @@
+<!-- 
+  Name: Vera Korchemnaya
+  Date: 10-21-21
+  Description: Mortgage Calculator
+    The main purpose of this asignment was too:
+      - get us more familar with PHP
+      - work with HTML forms
+
+    This document is the HTML form to obtain all the data from the user. 
+    The user is required to enter their name, address, property type, 
+    loan amount, interest rate, term of loan, and report format. When
+    the user hits submit the form will be sent to form.php where the
+    data will be displayed and an amortization schedule printed.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="form.php" method="post">
+      <!-- Name of borrower(s) -->
+      <label for="borrower">Name of borrower(s): </label><br />
+      <input type="text" id="borrower" name="borrower" required /><br /><br />
+
+      <!-- Address of property -->
+      Address of property: <br />
+
+      <label for="street">Street</label><br />
+      <input type="text" id="street" name="street" required /><br />
+
+      <label for="city">City</label><br />
+      <input type="text" id="city" name="city" required /><br />
+
+      <label for="state">State</label><br />
+      <input type="text" id="state" name="state" required /><br />
+
+      <label for="zipCode">Zip Code</label><br />
+      <input type="text" id="zipCode" name="zipCode" required /><br /><br />
+
+      <!-- Type of property -->
+      Type of property:
+      <br />
+      <input type="radio" value="Single Family" name="propertyType" required />
+      <label for="singleFam">Single Family</label><br />
+
+      <input type="radio" value="Multi Family" name="propertyType" />
+      <label for="multiFam">Multifamily</label><br />
+
+      <input type="radio" value="Condo" name="propertyType" />
+      <label for="condo">Condo</label><br />
+
+      <input type="radio" value="Rental" name="propertyType" />
+      <label for="rental">Rental</label><br />
+
+      <input type="radio" value="Vacation Home" name="propertyType" />
+      <label for="vacaHome">Vacation Home</label><br /><br />
+
+      <!-- Amount of loan -->
+      <label for="loanAmount">Amount of loan:</label><br />
+      <input
+        type="text"
+        id="loanAmount"
+        name="loanAmount"
+        required
+      /><br /><br />
+
+      <!-- Interest rate -->
+      <label for="interestRate">Select an interest rate: </label>
+      <input
+        type="number"
+        id="interestRate"
+        name="interestRate"
+        min="1.25"
+        max="3.75"
+        step=".125"
+        value="1.25"
+        required
+      />
+      <br /><br />
+
+      <!-- Term of the loan in years -->
+      <!-- Compare Total Interest has a value of -1 -->
+      <label for="loanYears">Term of the loan in years: </label><br />
+      <select name="loanYears" id="loanYears">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="-1">Compare Total Interest</option></select
+      ><br /><br />
+
+      <!-- Report by month or year -->
+      <label for="reportFormat">Report by:</label><br />
+      <input type="radio" name="reportFormat" value="month" required />
+      <label for="month" checked>Month</label><br />
+      <input type="radio" name="reportFormat" value="year" />
+      <label for="year">Year</label><br /><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>

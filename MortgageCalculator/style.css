@@ -1,0 +1,20 @@
+/* 
+Name: Vera Korchemnaya 
+Date: 10-21-21
+Description: This document includes some very simple 
+    styling for the tables to be printed in form.php.
+*/
+table {
+  border-spacing: 16px 8px;
+}
+
+td {
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* This will align the text in the month, year, and 
+term column in the center. */
+td:first-child {
+  text-align: center;
+}
