@@ -15,17 +15,17 @@ Step 2: Navigate into the folder that contains the sources files
 	Hit enter. 
 
 	Ex: 
-	    My files are in a folder called Assignment4 that is located on my desktop.
+	    My files are in a folder called ExternalSort that is located on my desktop.
 	    I type in the following command to change into that directory:
-	    cd C:\Users\Vera\Desktop\Assignment4
+	    cd C:\Users\Vera\Desktop\ExternalSort
 
-Step 3: Compile the sources file
+Step 3: Compile the source file
 	Once you are in the correct directory we need to compile the source file.
 	To do this run the following line in Command Prompt:
 		javac Merge.java
 
 Step 4: Run the program
-	To run the program we need to call java, followed by the class name, followed by the data sets that you want to merge. 
+	To run the program we need to call java, followed by the class name, followed by the data sets that will be merged. 
 	We will use the line below:
 		java Merge data1.txt data2.txt data3.txt
 
