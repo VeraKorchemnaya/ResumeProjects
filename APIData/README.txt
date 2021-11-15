@@ -26,10 +26,9 @@ Step 4: Run the program
 	Into the search bar enter the following and hit enter:
 	    http://127.0.0.1:8000/cities
 
-Notes: If you were to open this project in VSCode, these are the pages of interest where my work
-	   is located: 
-	   CityNameDbApp\routes\web.php
-	   CityNameDbApp\app\Domain\API\Data.php
-	   CityNameDbApp\app\Models\City.php
-	   CityNameDbApp\resources\views\cities\index.blade.php
-	   CityNameDbApp\database\migrations\2021_11_08_233225_create_cities_table.php
+Notes: Pages of interest where my work is located: 
+	CityNameDbApp\routes\web.php
+	CityNameDbApp\app\Domain\API\Data.php
+	CityNameDbApp\app\Models\City.php
+	CityNameDbApp\resources\views\cities\index.blade.php
+	CityNameDbApp\database\migrations\2021_11_08_233225_create_cities_table.php
